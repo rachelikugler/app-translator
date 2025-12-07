@@ -4,10 +4,10 @@ import fetch from 'node-fetch';
 import pkg from 'pg';
 const { Pool } = pkg;
 
-
+app.use(cors());
 const app = express();
 app.use(express.json());
-app.use(cors());
+
 
 
 const pool = new Pool({
