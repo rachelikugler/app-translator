@@ -38,8 +38,7 @@ services:
       - "8080:80"
     networks:
       - appnet
-    depends_on:
-      - backend
+      
 
 volumes:
   db_data:
